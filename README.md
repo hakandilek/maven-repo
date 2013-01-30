@@ -15,8 +15,8 @@ with play framework 2.x:
 ----
 
     val main = PlayProject(appName, appVersion, appDependencies, mainLang = JAVA).settings(
-        resolvers += Resolver.url("release repository", url("http://hakandilek.github.com/maven-repo/releases/"))(Resolver.ivyStylePatterns),
-        resolvers += Resolver.url("snapshot repository", url("http://hakandilek.github.com/maven-repo/snapshots/"))(Resolver.ivyStylePatterns)
+        resolvers += "release repository" at  "http://hakandilek.github.com/maven-repo/releases/",
+        resolvers += "snapshot repository" at "http://hakandilek.github.com/maven-repo/snapshots/"
     )
 
 

@@ -2,4 +2,5 @@
 cp -rv %PLAY_HOME%\repository/local/play2-cache snapshots
 cp -rv %PLAY_HOME%\repository/local/play2-crud snapshots
 
-cp -Trv %HOME%\.m2\repository\com\pickleproject\ snapshots\com.pickleproject
+mkdir snapshots\com\pickleproject
+cp -Trv %HOME%\.m2\repository\com\pickleproject\ snapshots\com\pickleproject

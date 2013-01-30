@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<project
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd"
+	xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>com.pickleproject</groupId>
+		<artifactId>pickle</artifactId>
+		<version>0.3-SNAPSHOT</version>
+	</parent>
+	<artifactId>pickle-shopping-tr</artifactId>
+	<name>pickle-shopping-tr</name>
+	<url>http://hakandilek.github.com/pickle/</url>
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+	</properties>
+	<dependencies>
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>4.11</version>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>com.pickleproject</groupId>
+			<artifactId>pickle-shopping</artifactId>
+			<version> ${parent.version}</version>
+		</dependency>
+	</dependencies>
+</project>

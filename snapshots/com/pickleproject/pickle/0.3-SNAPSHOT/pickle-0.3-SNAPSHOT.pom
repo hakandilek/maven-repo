@@ -11,6 +11,13 @@
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	</properties>
+	<repositories>
+		<repository>
+		    <id>http://hakandilek.github.com/maven-repo/snapshots</id>
+			<name>hakandilek Snapshots</name>
+			<url>http://hakandilek.github.com/maven-repo/snapshots</url>
+		</repository>
+	</repositories>
 	<build>
 		<plugins>
 			<plugin>
@@ -34,6 +41,7 @@
 	</dependencies>
 	<modules>
 		<module>pickle-core</module>
+        <module>pickle-shopping-config-dao</module>
 		<module>pickle-shopping</module>
 		<module>pickle-shopping-tr</module>
 	</modules>

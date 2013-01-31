@@ -18,6 +18,11 @@
 			<version>4.11</version>
 			<scope>test</scope>
 		</dependency>
+        <dependency>
+            <groupId>javax.inject</groupId>
+            <artifactId>javax.inject</artifactId>
+            <version>1</version>
+        </dependency>
 		<dependency>
 			<groupId>com.pickleproject</groupId>
 			<artifactId>pickle-core</artifactId>

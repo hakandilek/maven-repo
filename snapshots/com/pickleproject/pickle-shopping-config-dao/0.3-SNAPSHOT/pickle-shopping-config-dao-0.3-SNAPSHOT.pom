@@ -12,11 +12,11 @@
 	<name>pickle-config-dao</name>
 	<url>http://hakandilek.github.com/pickle/</url>
 	<repositories>
-	<repository>
-	<id>typesafe-releases</id>
-	<name>typesafe releases</name>
-	<url>http://repo.typesafe.com/typesafe/releases/</url>
-	</repository>
+		<repository>
+			<id>typesafe-releases</id>
+			<name>typesafe releases</name>
+			<url>http://repo.typesafe.com/typesafe/releases/</url>
+		</repository>
 	</repositories>
 	<dependencies>
 		<dependency>
@@ -34,12 +34,12 @@
         <dependency>
             <groupId>com.pickleproject</groupId>
             <artifactId>pickle-core</artifactId>
-            <version> ${parent.version}</version>
+            <version>${project.parent.version}</version>
         </dependency>
         <dependency>
             <groupId>com.pickleproject</groupId>
             <artifactId>pickle-shopping</artifactId>
-            <version> ${parent.version}</version>
+            <version>${project.parent.version}</version>
         </dependency>
 		<dependency>
 		    <groupId>javax.inject</groupId>

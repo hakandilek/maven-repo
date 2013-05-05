@@ -42,11 +42,45 @@
 <pre><code>http://hakandilek.github.com/maven-repo/releases/
 </code></pre>
 
-<h2>with play framework 2.x:</h2>
+<h2>with maven:</h2>
+
+<pre><code>&lt;repositories&gt;
+    &lt;repository&gt;
+        &lt;id&gt;hakandilek-maven-repo-snapshots&lt;/id&gt;
+        &lt;url&gt;http://hakandilek.github.com/maven-repo/snapshots/&lt;/url&gt;
+        &lt;releases&gt;
+            &lt;enabled&gt;false&lt;/enabled&gt;
+        &lt;/releases&gt;
+        &lt;snapshots&gt;
+            &lt;enabled&gt;true&lt;/enabled&gt;
+        &lt;/snapshots&gt;
+    &lt;/repository&gt;
+    &lt;repository&gt;
+        &lt;id&gt;hakandilek-maven-repo-releases&lt;/id&gt;
+        &lt;url&gt;http://hakandilek.github.com/maven-repo/releases/&lt;/url&gt;
+        &lt;releases&gt;
+            &lt;enabled&gt;true&lt;/enabled&gt;
+        &lt;/releases&gt;
+        &lt;snapshots&gt;
+            &lt;enabled&gt;false&lt;/enabled&gt;
+        &lt;/snapshots&gt;
+    &lt;/repository&gt;
+&lt;/repositories&gt;
+</code></pre>
+
+<h2>with play framework 2.0:</h2>
 
 <pre><code>val main = PlayProject(appName, appVersion, appDependencies, mainLang = JAVA).settings(
-    resolvers += Resolver.url("release repository", url("http://hakandilek.github.com/maven-repo/releases/"))(Resolver.ivyStylePatterns),
-    resolvers += Resolver.url("snapshot repository", url("http://hakandilek.github.com/maven-repo/snapshots/"))(Resolver.ivyStylePatterns)
+    resolvers += "release repository" at  "http://hakandilek.github.com/maven-repo/releases/",
+    resolvers += "snapshot repository" at "http://hakandilek.github.com/maven-repo/snapshots/"
+)
+</code></pre>
+
+<h2>with play framework 2.1:</h2>
+
+<pre><code>val main = play.Project(appName, appVersion, appDependencies).settings (
+    resolvers += "release repository" at  "http://hakandilek.github.com/maven-repo/releases/",
+    resolvers += "snapshot repository" at "http://hakandilek.github.com/maven-repo/snapshots/"
 )
 </code></pre>
 

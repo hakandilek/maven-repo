@@ -5,7 +5,7 @@
     <artifactId>play2-crud_2.10</artifactId>
     <packaging>jar</packaging>
     <description>play2-crud</description>
-    <version>0.7.0-SNAPSHOT</version>
+    <version>0.7.0</version>
     <name>play2-crud</name>
     <organization>
         <name>play2-crud</name>

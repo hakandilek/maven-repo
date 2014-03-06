@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+<project
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd"
+	xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>com.pickleproject</groupId>
+		<artifactId>pickle</artifactId>
+		<version>0.7.0-SNAPSHOT</version>
+	</parent>
+	<artifactId>pickle-shopping</artifactId>
+	<name>pickle-shopping</name>
+	<url>http://hakandilek.github.com/pickle/</url>
+	<repositories>
+		<repository>
+			<id>typesafe-releases</id>
+			<name>typesafe releases</name>
+			<url>http://repo.typesafe.com/typesafe/releases/</url>
+		</repository>
+	</repositories>
+	<dependencies>
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>4.11</version>
+			<scope>test</scope>
+		</dependency>
+        <dependency>
+            <groupId>javax.inject</groupId>
+            <artifactId>javax.inject</artifactId>
+            <version>1</version>
+        </dependency>
+		<dependency>
+			<groupId>com.pickleproject</groupId>
+			<artifactId>pickle-core</artifactId>
+			<version>${project.parent.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>ch.qos.logback</groupId>
+			<artifactId>logback-core</artifactId>
+			<version>1.0.9</version>
+		</dependency>
+		<dependency>
+			<groupId>com.typesafe.play</groupId>
+			<artifactId>play-java-ebean_2.10</artifactId>
+			<version>2.2.2</version>
+		</dependency>
+        <dependency>
+            <groupId>play2-crud</groupId>
+            <artifactId>play2-crud_2.10</artifactId>
+            <version>0.7.3-SNAPSHOT</version>
+        </dependency>
+	</dependencies>
+</project>
